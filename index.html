@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main class="rating" id="rating">
+      <!-- Rating state start -->
+      <div class="rating_container" id="rating_container">
+        <picture class="rating_star_img">
+          <img src="./images/icon-star.svg" alt="Star Icon" />
+        </picture>
+        <h1 class="title1">How did we do?</h1>
+        <p class="rating_paragraph">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="rating_number_container">
+          <span class="rating_number 1"
+            ><div class="rating_number_individual">1</div>
+          </span>
+          <span class="rating_number 2"
+            ><div class="rating_number_individual">2</div>
+          </span>
+          <span class="rating_number 3"
+            ><div class="rating_number_individual">3</div></span
+          >
+          <span class="rating_number 4"
+            ><div class="rating_number_individual">4</div></span
+          >
+          <span class="rating_number 5"
+            ><div class="rating_number_individual">5</div></span
+          >
+        </div>
+        <div class="rating_btn" id="rating_btn">
+          Submit
+          <!-- <p class="rating_btn--paragraph"></p> -->
+        </div>
+      </div>
+
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div class="thank_you_container hide" id="thank_you_container">
+        <picture class="thank_you__img--container">
+          <img
+            src="./images/illustration-thank-you.svg"
+            alt="thank you image"
+          />
+        </picture>
+        <p class="thank_you__rating">
+          You selected
+          <span
+            class="thank_you__rating--rating_number"
+            id="thank_you__rating_number"
+          ></span>
+          out of 5.
+        </p>
+
+        <!-- Add rating here -->
+        <p class="thank_message">
+          <span class="thank_message--span">Thank you!</span> We appreciate you
+          taking the time to give a rating. If you ever need more support, don’t
+          hesitate to get in touch!
+        </p>
+
+        <!-- Thank you state end -->
+      </div>
+    </main>
+    <footer class="footer attribution">
+      <p class="footer_paragraph">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >.
+      </p>
+      <p class="footer_paragraph">Coded by <a href="#">Hency Lara</a>.</p>
+    </footer>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
